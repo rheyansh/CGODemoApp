@@ -24,3 +24,29 @@
 7. Compatibility:                            	All iPhone/iPad
 8. Mode:                            	        Both portrait and ladscape
 8. Online/Offline:                            Online
+
+
+# Project structure
+
+Folder/Viewcontroller:- It contains all the used viewcontroller files.
+
+Folder/CustomCells:- It contains all the custom cells used for UITableView and UICollectionView.
+
+Folder/Extension:- It has reusable and helper extensions for UIImageView, UIApplication, UIView, UIImageView, Dictionary etc.
+
+Folder/Artwork:- Contains placeholder image and can be used to add custom fonts, static html etc.
+
+Folder/Modals:- Contains all the models classes for data parsing and business logic.
+
+Folder/Utils:- Contains utility classes, constants files, logger and debuggers etc.
+
+Folder/WebApiClasses:- Contains all the files and classes needed for client server communications like Reachability, Service helper, progress hud.
+
+Folder/Storyboards:- Contains multiple storyboards with scenes.
+
+Assets.scassests:- Contains slices image in 2x and 3x resolutions including app icons. Note that launch screen are note added here as there is separate launch storyboard which is used for launch image to minimize app size.
+Info.plist:- App’s pre configurations, permissions, info, behaviours are added in this file.
+
+Folder/ExternalClasses:- All the third party classes are added in this folder.
+
+Podfile:- Contains dependencies and their versions used in project.
