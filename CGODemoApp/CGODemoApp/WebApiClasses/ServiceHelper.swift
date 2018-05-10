@@ -11,7 +11,7 @@ import UIKit
 //@@@@@@@@@@@@@@@@@@@@@ Helper constants @@@@@@@@@@@@@@@@@@@@@@@@@@
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-//@@ Staging URL
+//@@ Base URL
 
 let webApiBaseURL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/"
 
@@ -120,37 +120,8 @@ class ServiceHelper: NSObject {
     
     class fileprivate func getURL(_ apiName: String, parameterDict: [String: Any]) -> URL {
         
-        var urlString = webApiBaseURL + apiName
-        var isFirst = true
-        
-        for key in parameterDict.keys {
-            
-            let object = parameterDict[key]
-            
-            if object is NSArray {
-                
-                let array = object as! NSArray
-                for eachObject in array {
-                    var appendedStr = "&"
-                    if (isFirst == true) {
-                        appendedStr = "?"
-                    }
-                    urlString += appendedStr + (key) + "=" + (eachObject as! String)
-                    isFirst = false
-                }
-                
-            } else {
-                var appendedStr = "&"
-                if (isFirst == true) {
-                    appendedStr = "?"
-                }
-                let parameterStr = parameterDict[key] as! String
-                urlString += appendedStr + (key) + "=" + parameterStr
-            }
-            
-            isFirst = false
-        }
-        
+        let urlString = webApiBaseURL + apiName
+    
         let strUrl = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         return URL(string:strUrl!)!
     }

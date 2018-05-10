@@ -71,15 +71,18 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
                     cell.avatar.image = imageD
                 })
             } else {
+                // image caching and lazy loading
                 cell.avatar.sd_setImage(with: url) { (image, error, cacheType, url) in
                     if let image = image {
                         self.dataSourceArray[indexPath.row].image = image
                         cell.avatar.image = image
-                        
+                        // update in main thread
                         DispatchQueue.main.async(execute: {
                             cell.avatar.image = image
                         })
                         self.collectionView.collectionViewLayout.invalidateLayout()
+                    } else {
+                        
                     }
                 }
             }
@@ -87,6 +90,8 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
         
         cell.onTappingImage = {
             () -> Void in
+            
+            // user tapped on image, push to datail screen
             let previewDataVC = self.storyboard?.instantiateViewController(withIdentifier: "CGPreviewDataVC") as! CGPreviewDataVC
             previewDataVC.dataModal = modal
             self.navigationController?.pushViewController(previewDataVC, animated: true)
@@ -99,6 +104,7 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
+        // resturn custom layout based on image size if available
         if let image = dataSourceArray[indexPath.item].image {
             return CGSize(width: min(image.size.width, collectionView.frame.size.width), height: image.size.height)
         }
@@ -106,6 +112,10 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
         let width = self.collectionView.frame.size.width
         return CGSize(width: width, height: 200)
     }
+    
+    /*
+     Handle layout for rotations between landscape and portrait mode
+ */
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
