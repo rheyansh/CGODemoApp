@@ -9,10 +9,26 @@
 /* Begin PBXBuildFile section */
 		4606B9A16C9C4C650A2E0373 /* Pods_CGODemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC90F2B540F1EE4F8CAD842 /* Pods_CGODemoApp.framework */; };
 		A9150F1F20A429AC00AA0313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F1E20A429AC00AA0313 /* AppDelegate.swift */; };
-		A9150F2120A429AC00AA0313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F2020A429AC00AA0313 /* ViewController.swift */; };
 		A9150F2420A429AC00AA0313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9150F2220A429AC00AA0313 /* Main.storyboard */; };
 		A9150F2620A429AD00AA0313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9150F2520A429AD00AA0313 /* Assets.xcassets */; };
 		A9150F2920A429AD00AA0313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9150F2720A429AD00AA0313 /* LaunchScreen.storyboard */; };
+		A9150F5120A43C3A00AA0313 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A9150F3A20A43C3900AA0313 /* placeholder.png */; };
+		A9150F5220A43C3A00AA0313 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A9150F3D20A43C3900AA0313 /* MBProgressHUD.m */; };
+		A9150F5320A43C3A00AA0313 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A9150F3E20A43C3900AA0313 /* LICENSE */; };
+		A9150F5420A43C3A00AA0313 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4120A43C3900AA0313 /* Reachability.m */; };
+		A9150F5520A43C3A00AA0313 /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4320A43C3900AA0313 /* ServiceHelper.swift */; };
+		A9150F5620A43C3A00AA0313 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4520A43C3900AA0313 /* UIApplicationExtension.swift */; };
+		A9150F5720A43C3A00AA0313 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4620A43C3900AA0313 /* GeneralExtensions.swift */; };
+		A9150F5820A43C3A00AA0313 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4720A43C3900AA0313 /* UIWindowExtension.swift */; };
+		A9150F5920A43C3A00AA0313 /* CGImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4A20A43C3900AA0313 /* CGImageCollectionViewCell.swift */; };
+		A9150F5A20A43C3A00AA0313 /* CGCustomCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4C20A43C3A00AA0313 /* CGCustomCollectionLayout.swift */; };
+		A9150F5B20A43C3A00AA0313 /* RUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4D20A43C3A00AA0313 /* RUtil.swift */; };
+		A9150F5C20A43C3A00AA0313 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4E20A43C3A00AA0313 /* AlertController.swift */; };
+		A9150F5D20A43C3A00AA0313 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F4F20A43C3A00AA0313 /* Debug.swift */; };
+		A9150F5E20A43C3A00AA0313 /* CGBaseCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F5020A43C3A00AA0313 /* CGBaseCollectionViewLayout.swift */; };
+		A9150F6220A43C9D00AA0313 /* CGPreviewDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F6020A43C9D00AA0313 /* CGPreviewDataVC.swift */; };
+		A9150F6320A43C9D00AA0313 /* CGImageCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F6120A43C9D00AA0313 /* CGImageCollectionVC.swift */; };
+		A9150F6620A43CC600AA0313 /* ImageSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9150F6520A43CC600AA0313 /* ImageSection.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +37,30 @@
 		8A67AC68762D201A973868C1 /* Pods-CGODemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGODemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CGODemoApp/Pods-CGODemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A9150F1B20A429AC00AA0313 /* CGODemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGODemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9150F1E20A429AC00AA0313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9150F2020A429AC00AA0313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9150F2320A429AC00AA0313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9150F2520A429AD00AA0313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9150F2820A429AD00AA0313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9150F2A20A429AD00AA0313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9150F3020A42AEE00AA0313 /* CGODemo_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGODemo_Bridging_Header.h; sourceTree = "<group>"; };
+		A9150F3A20A43C3900AA0313 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		A9150F3D20A43C3900AA0313 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A9150F3E20A43C3900AA0313 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A9150F3F20A43C3900AA0313 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A9150F4120A43C3900AA0313 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A9150F4220A43C3900AA0313 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A9150F4320A43C3900AA0313 /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		A9150F4520A43C3900AA0313 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		A9150F4620A43C3900AA0313 /* GeneralExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		A9150F4720A43C3900AA0313 /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		A9150F4A20A43C3900AA0313 /* CGImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9150F4C20A43C3A00AA0313 /* CGCustomCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGCustomCollectionLayout.swift; sourceTree = "<group>"; };
+		A9150F4D20A43C3A00AA0313 /* RUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUtil.swift; sourceTree = "<group>"; };
+		A9150F4E20A43C3A00AA0313 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		A9150F4F20A43C3A00AA0313 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		A9150F5020A43C3A00AA0313 /* CGBaseCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBaseCollectionViewLayout.swift; sourceTree = "<group>"; };
+		A9150F6020A43C9D00AA0313 /* CGPreviewDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPreviewDataVC.swift; sourceTree = "<group>"; };
+		A9150F6120A43C9D00AA0313 /* CGImageCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageCollectionVC.swift; sourceTree = "<group>"; };
+		A9150F6520A43CC600AA0313 /* ImageSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageSection.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +113,113 @@
 		A9150F1D20A429AC00AA0313 /* CGODemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9150F3920A43C3900AA0313 /* Artwork */,
+				A9150F4820A43C3900AA0313 /* CustomCells */,
+				A9150F4420A43C3900AA0313 /* Extensions */,
+				A9150F4B20A43C3A00AA0313 /* Utils */,
+				A9150F3B20A43C3900AA0313 /* WebApiClasses */,
 				A9150F1E20A429AC00AA0313 /* AppDelegate.swift */,
-				A9150F2020A429AC00AA0313 /* ViewController.swift */,
-				A9150F2220A429AC00AA0313 /* Main.storyboard */,
+				A9150F5F20A43C9D00AA0313 /* ViewControllers */,
+				A9150F6420A43CB200AA0313 /* Storyboards */,
 				A9150F2520A429AD00AA0313 /* Assets.xcassets */,
-				A9150F2720A429AD00AA0313 /* LaunchScreen.storyboard */,
 				A9150F2A20A429AD00AA0313 /* Info.plist */,
 				A9150F3020A42AEE00AA0313 /* CGODemo_Bridging_Header.h */,
 			);
 			path = CGODemoApp;
+			sourceTree = "<group>";
+		};
+		A9150F3920A43C3900AA0313 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F3A20A43C3900AA0313 /* placeholder.png */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		A9150F3B20A43C3900AA0313 /* WebApiClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F3C20A43C3900AA0313 /* MBProgressHUD */,
+				A9150F4320A43C3900AA0313 /* ServiceHelper.swift */,
+			);
+			path = WebApiClasses;
+			sourceTree = "<group>";
+		};
+		A9150F3C20A43C3900AA0313 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F3D20A43C3900AA0313 /* MBProgressHUD.m */,
+				A9150F3E20A43C3900AA0313 /* LICENSE */,
+				A9150F3F20A43C3900AA0313 /* MBProgressHUD.h */,
+				A9150F4020A43C3900AA0313 /* Reachability */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A9150F4020A43C3900AA0313 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F4120A43C3900AA0313 /* Reachability.m */,
+				A9150F4220A43C3900AA0313 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		A9150F4420A43C3900AA0313 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F4520A43C3900AA0313 /* UIApplicationExtension.swift */,
+				A9150F4620A43C3900AA0313 /* GeneralExtensions.swift */,
+				A9150F4720A43C3900AA0313 /* UIWindowExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9150F4820A43C3900AA0313 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F4920A43C3900AA0313 /* CollectionViewCells */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		A9150F4920A43C3900AA0313 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F4A20A43C3900AA0313 /* CGImageCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		A9150F4B20A43C3A00AA0313 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F4C20A43C3A00AA0313 /* CGCustomCollectionLayout.swift */,
+				A9150F4D20A43C3A00AA0313 /* RUtil.swift */,
+				A9150F4E20A43C3A00AA0313 /* AlertController.swift */,
+				A9150F4F20A43C3A00AA0313 /* Debug.swift */,
+				A9150F5020A43C3A00AA0313 /* CGBaseCollectionViewLayout.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9150F5F20A43C9D00AA0313 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F6020A43C9D00AA0313 /* CGPreviewDataVC.swift */,
+				A9150F6120A43C9D00AA0313 /* CGImageCollectionVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A9150F6420A43CB200AA0313 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F2220A429AC00AA0313 /* Main.storyboard */,
+				A9150F2720A429AD00AA0313 /* LaunchScreen.storyboard */,
+				A9150F6520A43CC600AA0313 /* ImageSection.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9150F2920A429AD00AA0313 /* LaunchScreen.storyboard in Resources */,
+				A9150F5120A43C3A00AA0313 /* placeholder.png in Resources */,
+				A9150F6620A43CC600AA0313 /* ImageSection.storyboard in Resources */,
 				A9150F2620A429AD00AA0313 /* Assets.xcassets in Resources */,
 				A9150F2420A429AC00AA0313 /* Main.storyboard in Resources */,
+				A9150F5320A43C3A00AA0313 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +337,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9150F2120A429AC00AA0313 /* ViewController.swift in Sources */,
+				A9150F5620A43C3A00AA0313 /* UIApplicationExtension.swift in Sources */,
+				A9150F6220A43C9D00AA0313 /* CGPreviewDataVC.swift in Sources */,
+				A9150F5720A43C3A00AA0313 /* GeneralExtensions.swift in Sources */,
+				A9150F5520A43C3A00AA0313 /* ServiceHelper.swift in Sources */,
+				A9150F5E20A43C3A00AA0313 /* CGBaseCollectionViewLayout.swift in Sources */,
+				A9150F5C20A43C3A00AA0313 /* AlertController.swift in Sources */,
+				A9150F6320A43C9D00AA0313 /* CGImageCollectionVC.swift in Sources */,
+				A9150F5220A43C3A00AA0313 /* MBProgressHUD.m in Sources */,
+				A9150F5D20A43C3A00AA0313 /* Debug.swift in Sources */,
+				A9150F5820A43C3A00AA0313 /* UIWindowExtension.swift in Sources */,
+				A9150F5420A43C3A00AA0313 /* Reachability.m in Sources */,
+				A9150F5920A43C3A00AA0313 /* CGImageCollectionViewCell.swift in Sources */,
+				A9150F5A20A43C3A00AA0313 /* CGCustomCollectionLayout.swift in Sources */,
+				A9150F5B20A43C3A00AA0313 /* RUtil.swift in Sources */,
 				A9150F1F20A429AC00AA0313 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

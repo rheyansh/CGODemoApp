@@ -9,6 +9,8 @@
 #ifndef CGODemo_Bridging_Header_h
 #define CGODemo_Bridging_Header_h
 
+#import "Reachability.h"
+#import "MBProgressHUD.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* CGODemo_Bridging_Header_h */
