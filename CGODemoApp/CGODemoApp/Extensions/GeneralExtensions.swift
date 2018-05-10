@@ -48,3 +48,29 @@ extension UIImageView {
     }
 }
 
+// MARK:- UIView Extensions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+extension UIView {
+    
+    @IBInspectable var corner: CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        set {
+            
+            self.layer.cornerRadius = newValue
+            self.clipsToBounds = true
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return self.layer.borderWidth
+        }
+        set {
+            
+            self.layer.borderWidth = newValue
+            self.clipsToBounds = true
+        }
+    }
+}

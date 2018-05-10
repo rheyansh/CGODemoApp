@@ -22,7 +22,6 @@
 		A9150EED20A408C600AA0313 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150ECC20A408C600AA0313 /* UIApplicationExtension.swift */; };
 		A9150EF520A408C600AA0313 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150ED520A408C600AA0313 /* GeneralExtensions.swift */; };
 		A9150EF920A408C600AA0313 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150ED920A408C600AA0313 /* UIWindowExtension.swift */; };
-		A9150F0220A4094000AA0313 /* ImageSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9150F0120A4094000AA0313 /* ImageSection.storyboard */; };
 		A9150F0520A4098800AA0313 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A9150F0420A4098800AA0313 /* placeholder.png */; };
 		A9150F0720A40C9800AA0313 /* CGImageCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0620A40C9800AA0313 /* CGImageCollectionVC.swift */; };
 		A9150F0920A40D5200AA0313 /* CGImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0820A40D5200AA0313 /* CGImageCollectionViewCell.swift */; };
@@ -54,7 +53,6 @@
 		A9150ECC20A408C600AA0313 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		A9150ED520A408C600AA0313 /* GeneralExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
 		A9150ED920A408C600AA0313 /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
-		A9150F0120A4094000AA0313 /* ImageSection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageSection.storyboard; sourceTree = "<group>"; };
 		A9150F0420A4098800AA0313 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		A9150F0620A40C9800AA0313 /* CGImageCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCollectionVC.swift; sourceTree = "<group>"; };
 		A9150F0820A40D5200AA0313 /* CGImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 			children = (
 				A9150E4A20A4058500AA0313 /* LaunchScreen.storyboard */,
 				A9150E4520A4058100AA0313 /* Main.storyboard */,
-				A9150F0120A4094000AA0313 /* ImageSection.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -294,7 +291,6 @@
 				A9150E4C20A4058500AA0313 /* LaunchScreen.storyboard in Resources */,
 				A9150F0520A4098800AA0313 /* placeholder.png in Resources */,
 				A9150E4920A4058500AA0313 /* Assets.xcassets in Resources */,
-				A9150F0220A4094000AA0313 /* ImageSection.storyboard in Resources */,
 				A9150E5E20A407C100AA0313 /* LICENSE in Resources */,
 				A9150E4720A4058100AA0313 /* Main.storyboard in Resources */,
 			);
@@ -509,7 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CGODemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,7 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CGODemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
