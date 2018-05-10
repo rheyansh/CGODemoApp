@@ -16,7 +16,7 @@
 # TECHNICAL SPECIFICATION
 
 1. Min deployment target:                     iOS 8.0
-2. IDE:                             	  	    XCode 9.3
+2. IDE:                             	  	    XCode 9.3 (Please make sure to use 9.3 version of xcode)
 3. Design pattern:                          	MVC
 4. Programming language usage:     	          Swift 4.1
 5. View specification:                       	Storyboard
@@ -25,6 +25,7 @@
 8. Mode:                            	        Both portrait and ladscape
 8. Online/Offline:                            Online
 
+# Pull to refresh and network reachability
 
 # Project structure
 
@@ -50,3 +51,5 @@ Info.plist:- App’s pre configurations, permissions, info, behaviours are added
 Folder/ExternalClasses:- All the third party classes are added in this folder.
 
 Podfile:- Contains dependencies and their versions used in project.
+
+
