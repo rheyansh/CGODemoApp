@@ -13,6 +13,8 @@
 10. For iphone & iPad (portrait)- When click on collection view image, navigate to detail page having title on navigation bar with image as banner and description at the bottom of the banner image. 
 11. For iphone & iPad (landscape)- When click on collection view image, navigate to detail page having title on navigation bar with image on the left hand side of the screen and description at the right hand side of the screen (ratio size of the screen between image and description is 30:70). 
 
+>> Pull to refresh and network reachability
+
 # TECHNICAL SPECIFICATION
 
 1. Min deployment target:                     iOS 8.0
@@ -24,8 +26,6 @@
 7. Compatibility:                            	All iPhone/iPad
 8. Mode:                            	        Both portrait and ladscape
 8. Online/Offline:                            Online
-
-# Pull to refresh and network reachability
 
 # Project structure
 
