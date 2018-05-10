@@ -11,7 +11,6 @@ import UIKit
 class CGPreviewDataVC: UIViewController {
 
     @IBOutlet weak var bannerImageView: UIImageView!
-    //@IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var dataModal : CGImageModal?
