@@ -24,10 +24,10 @@
 		A9150EF920A408C600AA0313 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150ED920A408C600AA0313 /* UIWindowExtension.swift */; };
 		A9150F0720A40C9800AA0313 /* CGImageCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0620A40C9800AA0313 /* CGImageCollectionVC.swift */; };
 		A9150F0920A40D5200AA0313 /* CGImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0820A40D5200AA0313 /* CGImageCollectionViewCell.swift */; };
-		A9150F0B20A40E4D00AA0313 /* CGImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0A20A40E4D00AA0313 /* CGImageModal.swift */; };
-		A9150F0D20A4170C00AA0313 /* CGCollectionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0C20A4170C00AA0313 /* CGCollectionModal.swift */; };
 		A9150F1120A421D700AA0313 /* CGPreviewDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F1020A421D700AA0313 /* CGPreviewDataVC.swift */; };
 		A9150F6820A473CF00AA0313 /* placeholder_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9150F6720A473CF00AA0313 /* placeholder_1.png */; };
+		A9150F6C20A47B7900AA0313 /* CGImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F6A20A47B7900AA0313 /* CGImageModal.swift */; };
+		A9150F6D20A47B7900AA0313 /* CGCollectionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F6B20A47B7900AA0313 /* CGCollectionModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,10 +55,10 @@
 		A9150ED920A408C600AA0313 /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		A9150F0620A40C9800AA0313 /* CGImageCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCollectionVC.swift; sourceTree = "<group>"; };
 		A9150F0820A40D5200AA0313 /* CGImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		A9150F0A20A40E4D00AA0313 /* CGImageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageModal.swift; sourceTree = "<group>"; };
-		A9150F0C20A4170C00AA0313 /* CGCollectionModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGCollectionModal.swift; sourceTree = "<group>"; };
 		A9150F1020A421D700AA0313 /* CGPreviewDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPreviewDataVC.swift; sourceTree = "<group>"; };
 		A9150F6720A473CF00AA0313 /* placeholder_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_1.png; sourceTree = "<group>"; };
+		A9150F6A20A47B7900AA0313 /* CGImageModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageModal.swift; sourceTree = "<group>"; };
+		A9150F6B20A47B7900AA0313 /* CGCollectionModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGCollectionModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +111,10 @@
 		A9150E4020A4058100AA0313 /* CGODemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9150F6920A47B7900AA0313 /* Modals */,
 				A9150E5420A407C100AA0313 /* WebApiClasses */,
 				A9150F0320A4097400AA0313 /* Artwork */,
 				A9150ECA20A408C600AA0313 /* Extensions */,
-				A9150EDF20A408C600AA0313 /* Modals */,
 				A9150E6F20A4082000AA0313 /* CustomCells */,
 				A9150EC020A408C600AA0313 /* Utils */,
 				A9150EDB20A408C600AA0313 /* ViewControllers */,
@@ -201,15 +201,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		A9150EDF20A408C600AA0313 /* Modals */ = {
-			isa = PBXGroup;
-			children = (
-				A9150F0C20A4170C00AA0313 /* CGCollectionModal.swift */,
-				A9150F0A20A40E4D00AA0313 /* CGImageModal.swift */,
-			);
-			path = Modals;
-			sourceTree = "<group>";
-		};
 		A9150F0020A408FA00AA0313 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +216,15 @@
 				A9150F6720A473CF00AA0313 /* placeholder_1.png */,
 			);
 			path = Artwork;
+			sourceTree = "<group>";
+		};
+		A9150F6920A47B7900AA0313 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				A9150F6A20A47B7900AA0313 /* CGImageModal.swift */,
+				A9150F6B20A47B7900AA0313 /* CGCollectionModal.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,10 +350,10 @@
 				A9150EE620A408C600AA0313 /* AlertController.swift in Sources */,
 				A9150F0920A40D5200AA0313 /* CGImageCollectionViewCell.swift in Sources */,
 				A9150E5D20A407C100AA0313 /* MBProgressHUD.m in Sources */,
+				A9150F6D20A47B7900AA0313 /* CGCollectionModal.swift in Sources */,
 				A9150E5F20A407C100AA0313 /* Reachability.m in Sources */,
-				A9150F0D20A4170C00AA0313 /* CGCollectionModal.swift in Sources */,
+				A9150F6C20A47B7900AA0313 /* CGImageModal.swift in Sources */,
 				A9150EED20A408C600AA0313 /* UIApplicationExtension.swift in Sources */,
-				A9150F0B20A40E4D00AA0313 /* CGImageModal.swift in Sources */,
 				A9150EE520A408C600AA0313 /* RUtil.swift in Sources */,
 				A9150E4220A4058100AA0313 /* AppDelegate.swift in Sources */,
 				A9150EF920A408C600AA0313 /* UIWindowExtension.swift in Sources */,
