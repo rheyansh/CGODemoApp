@@ -12,6 +12,7 @@ class CGImageCollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelega
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var contView: UIView!
 
     typealias DidTapOnImage = () -> Void
     var onTappingImage: DidTapOnImage?
@@ -23,6 +24,9 @@ class CGImageCollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelega
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
         tapGestureRecognizer.delegate = self
         avatar.addGestureRecognizer(tapGestureRecognizer)
+        
+        self.contView.layer.cornerRadius = 8
+        self.contView.clipsToBounds = true
     }
     
     @objc func handleTap(sender: UITapGestureRecognizer? = nil) {

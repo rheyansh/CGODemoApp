@@ -26,8 +26,6 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
     private func initialSetup() {
         loadDataFromServer()
         
-        self.collectionView.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-
         // setup refresh control
         self.refresher = UIRefreshControl()
         self.collectionView!.alwaysBounceVertical = true
@@ -61,6 +59,23 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
         let modal = self.dataSourceArray[indexPath.row]
         cell.avatar.normalLoad(modal.imageHref)
         
+        if let url = URL(string: modal.imageHref) {
+            
+            if let image = modal.image {
+                cell.avatar.image = image
+            } else {
+                cell.avatar.image = UIImage(named: "placeholder")!
+                cell.avatar.sd_setImage(with: url) { (image, error, cacheType, url) in
+                    if let image = image {
+                        self.dataSourceArray[indexPath.row].image = image
+                        self.collectionView.collectionViewLayout.invalidateLayout()
+                    }
+                }
+            }
+        } else {
+            cell.avatar.image = UIImage(named: "placeholder")!
+        }
+        
         cell.onTappingImage = {
             () -> Void in
             let previewDataVC = self.storyboard?.instantiateViewController(withIdentifier: "CGPreviewDataVC") as! CGPreviewDataVC
@@ -78,16 +93,19 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        var width = self.collectionView.frame.size.width/4
-        var height = width
+        if let image = dataSourceArray[indexPath.item].image {
+            return CGSize(width: min(image.size.width, collectionView.frame.size.width), height: image.size.height)
+        }
         
-        return CGSize(width: width, height: height)
+        let width = self.collectionView.frame.size.width
+        return CGSize(width: width, height: 200)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         self.collectionView.collectionViewLayout.invalidateLayout()
     }
+    
     
     //MARK:- Segues
 

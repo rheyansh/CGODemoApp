@@ -29,8 +29,6 @@
 		A9150F0B20A40E4D00AA0313 /* CGImageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0A20A40E4D00AA0313 /* CGImageModal.swift */; };
 		A9150F0D20A4170C00AA0313 /* CGCollectionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F0C20A4170C00AA0313 /* CGCollectionModal.swift */; };
 		A9150F1120A421D700AA0313 /* CGPreviewDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F1020A421D700AA0313 /* CGPreviewDataVC.swift */; };
-		A9150F3220A4378C00AA0313 /* CGCustomCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F3120A4378C00AA0313 /* CGCustomCollectionLayout.swift */; };
-		A9150F3420A437DC00AA0313 /* CGBaseCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F3320A437DC00AA0313 /* CGBaseCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +61,6 @@
 		A9150F0A20A40E4D00AA0313 /* CGImageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageModal.swift; sourceTree = "<group>"; };
 		A9150F0C20A4170C00AA0313 /* CGCollectionModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGCollectionModal.swift; sourceTree = "<group>"; };
 		A9150F1020A421D700AA0313 /* CGPreviewDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPreviewDataVC.swift; sourceTree = "<group>"; };
-		A9150F3120A4378C00AA0313 /* CGCustomCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGCustomCollectionLayout.swift; sourceTree = "<group>"; };
-		A9150F3320A437DC00AA0313 /* CGBaseCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGBaseCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +180,6 @@
 				A9150EC320A408C600AA0313 /* RUtil.swift */,
 				A9150EC420A408C600AA0313 /* AlertController.swift */,
 				A9150EC720A408C600AA0313 /* Debug.swift */,
-				A9150F3120A4378C00AA0313 /* CGCustomCollectionLayout.swift */,
-				A9150F3320A437DC00AA0313 /* CGBaseCollectionViewLayout.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -360,11 +354,9 @@
 				A9150EE620A408C600AA0313 /* AlertController.swift in Sources */,
 				A9150F0920A40D5200AA0313 /* CGImageCollectionViewCell.swift in Sources */,
 				A9150E5D20A407C100AA0313 /* MBProgressHUD.m in Sources */,
-				A9150F3220A4378C00AA0313 /* CGCustomCollectionLayout.swift in Sources */,
 				A9150E5F20A407C100AA0313 /* Reachability.m in Sources */,
 				A9150F0D20A4170C00AA0313 /* CGCollectionModal.swift in Sources */,
 				A9150EED20A408C600AA0313 /* UIApplicationExtension.swift in Sources */,
-				A9150F3420A437DC00AA0313 /* CGBaseCollectionViewLayout.swift in Sources */,
 				A9150F0B20A40E4D00AA0313 /* CGImageModal.swift in Sources */,
 				A9150EE520A408C600AA0313 /* RUtil.swift in Sources */,
 				A9150E4220A4058100AA0313 /* AppDelegate.swift in Sources */,
