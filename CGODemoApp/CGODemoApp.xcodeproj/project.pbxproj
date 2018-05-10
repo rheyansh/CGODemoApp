@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4606B9A16C9C4C650A2E0373 /* Pods_CGODemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC90F2B540F1EE4F8CAD842 /* Pods_CGODemoApp.framework */; };
 		A9150F1F20A429AC00AA0313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F1E20A429AC00AA0313 /* AppDelegate.swift */; };
 		A9150F2120A429AC00AA0313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9150F2020A429AC00AA0313 /* ViewController.swift */; };
 		A9150F2420A429AC00AA0313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9150F2220A429AC00AA0313 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EC90F2B540F1EE4F8CAD842 /* Pods_CGODemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGODemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A53C900D93E2B2A8E7F038 /* Pods-CGODemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGODemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CGODemoApp/Pods-CGODemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		8A67AC68762D201A973868C1 /* Pods-CGODemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGODemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CGODemoApp/Pods-CGODemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A9150F1B20A429AC00AA0313 /* CGODemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGODemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9150F1E20A429AC00AA0313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9150F2020A429AC00AA0313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		A9150F2520A429AD00AA0313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9150F2820A429AD00AA0313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9150F2A20A429AD00AA0313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9150F3020A42AEE00AA0313 /* CGODemo_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGODemo_Bridging_Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4606B9A16C9C4C650A2E0373 /* Pods_CGODemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC08B6942430F8211B3ABBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EC90F2B540F1EE4F8CAD842 /* Pods_CGODemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74F604FD3BA1E595718DA3FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A67AC68762D201A973868C1 /* Pods-CGODemoApp.debug.xcconfig */,
+				46A53C900D93E2B2A8E7F038 /* Pods-CGODemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A9150F1220A429AC00AA0313 = {
 			isa = PBXGroup;
 			children = (
 				A9150F1D20A429AC00AA0313 /* CGODemoApp */,
 				A9150F1C20A429AC00AA0313 /* Products */,
+				74F604FD3BA1E595718DA3FC /* Pods */,
+				0AC08B6942430F8211B3ABBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				A9150F2520A429AD00AA0313 /* Assets.xcassets */,
 				A9150F2720A429AD00AA0313 /* LaunchScreen.storyboard */,
 				A9150F2A20A429AD00AA0313 /* Info.plist */,
+				A9150F3020A42AEE00AA0313 /* CGODemo_Bridging_Header.h */,
 			);
 			path = CGODemoApp;
 			sourceTree = "<group>";
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9150F2D20A429AD00AA0313 /* Build configuration list for PBXNativeTarget "CGODemoApp" */;
 			buildPhases = (
+				5A7BB95CA161472C35D03EDE /* [CP] Check Pods Manifest.lock */,
 				A9150F1720A429AC00AA0313 /* Sources */,
 				A9150F1820A429AC00AA0313 /* Frameworks */,
 				A9150F1920A429AC00AA0313 /* Resources */,
+				9927D97E4A48B39CE3B59C32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A7BB95CA161472C35D03EDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CGODemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9927D97E4A48B39CE3B59C32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CGODemoApp/Pods-CGODemoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CGODemoApp/Pods-CGODemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9150F1720A429AC00AA0313 /* Sources */ = {
@@ -278,6 +345,7 @@
 		};
 		A9150F2E20A429AD00AA0313 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A67AC68762D201A973868C1 /* Pods-CGODemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +356,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Srijan.CGODemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CGODemoApp/CGODemo_Bridging_Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,6 +364,7 @@
 		};
 		A9150F2F20A429AD00AA0313 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46A53C900D93E2B2A8E7F038 /* Pods-CGODemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +375,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Srijan.CGODemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CGODemoApp/CGODemo_Bridging_Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

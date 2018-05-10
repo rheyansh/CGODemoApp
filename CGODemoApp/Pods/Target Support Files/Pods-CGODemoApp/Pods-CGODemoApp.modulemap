@@ -1,0 +1,6 @@
+framework module Pods_CGODemoApp {
+  umbrella header "Pods-CGODemoApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
