@@ -10,7 +10,24 @@ import UIKit
 
 class CGPreviewDataVC: UIViewController {
 
-   
+    @IBOutlet weak var bannerImageView: UIImageView!
+    @IBOutlet weak var descriptionField: UITextView!
+    
+    var dataModal : CGImageModal?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        guard let modal = dataModal else {
+            return
+        }
+        
+        title = modal.title
+        self.descriptionField.text = modal.imageDescription
+        self.bannerImageView.normalLoad(modal.imageHref)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

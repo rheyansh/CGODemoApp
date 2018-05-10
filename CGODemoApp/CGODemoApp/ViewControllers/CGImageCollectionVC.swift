@@ -11,7 +11,9 @@ import UIKit
 class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
+    var dataSourceArray = [CGImageModal]()
+    var refresher:UIRefreshControl!
 
     //MARK:- UIViewController Life Cycle Method
     override func viewDidLoad() {
@@ -23,9 +25,24 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
     //MARK: Private functions
     private func initialSetup() {
         loadDataFromServer()
-       
+        
+        self.collectionView.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+
+        // setup refresh control
+        self.refresher = UIRefreshControl()
+        self.collectionView!.alwaysBounceVertical = true
+        self.refresher.tintColor = UIColor.red
+        self.refresher.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        self.collectionView!.addSubview(refresher)
     }
     
+    @objc private func refreshData() {
+        stopRefresher()
+    }
+    
+    private func stopRefresher() {
+        self.refresher.endRefreshing()
+    }
     
     //MARK: UICollectionViewDataSource and Delegate Methods
     
@@ -34,13 +51,22 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 15;
+        return dataSourceArray.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CGImageCollectionViewCell", for: indexPath) as! CGImageCollectionViewCell
         
+        let modal = self.dataSourceArray[indexPath.row]
+        cell.avatar.normalLoad(modal.imageHref)
+        
+        cell.onTappingImage = {
+            () -> Void in
+            let previewDataVC = self.storyboard?.instantiateViewController(withIdentifier: "CGPreviewDataVC") as! CGPreviewDataVC
+            previewDataVC.dataModal = modal
+            self.navigationController?.pushViewController(previewDataVC, animated: true)
+        }
         
         return cell
     }
@@ -69,7 +95,20 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
     
     private func loadDataFromServer() {
         
-   
+        ServiceHelper.request(params: [:], method: .get, apiName: "facts.json") { (response, error, httpCode) in
+            self.stopRefresher()
+            if let error = error {
+                AlertController.alert(title: error.localizedDescription)
+            } else {
+             
+                if let infoDictionary = response as? Dictionary<String, AnyObject> {
+                    let collectionModal = CGCollectionModal(object: infoDictionary)
+                    self.title = collectionModal.title
+                    self.dataSourceArray = collectionModal.rows
+                    self.collectionView.reloadData()
+                }
+            }
+        }
     }
 
     //MARK:- Memory handling
