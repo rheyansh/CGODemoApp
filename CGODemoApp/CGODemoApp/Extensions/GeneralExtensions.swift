@@ -40,11 +40,18 @@ extension UIImageView {
     func normalLoad(_ string: String) {
         
         if let url = URL(string: string) {
-            //self.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder")!, options: .refreshCached)
             self.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder")!)
         } else {
             self.image = UIImage(named: "placeholder")!
         }
+    }
+}
+
+// MARK:- String Extensions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+extension String {
+    var length: Int {
+        return self.count
     }
 }
 

@@ -58,22 +58,31 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
         
         let modal = self.dataSourceArray[indexPath.row]
         cell.avatar.normalLoad(modal.imageHref)
+        cell.titleLabel.text = modal.title
+        DispatchQueue.main.async(execute: {
+            cell.avatar.image = UIImage(named: "placeholder")!
+        })
         
         if let url = URL(string: modal.imageHref) {
             
-            if let image = modal.image {
-                cell.avatar.image = image
+            if let imageD = modal.image {
+                cell.avatar.image = imageD
+                DispatchQueue.main.async(execute: {
+                    cell.avatar.image = imageD
+                })
             } else {
-                cell.avatar.image = UIImage(named: "placeholder")!
                 cell.avatar.sd_setImage(with: url) { (image, error, cacheType, url) in
                     if let image = image {
                         self.dataSourceArray[indexPath.row].image = image
+                        cell.avatar.image = image
+                        
+                        DispatchQueue.main.async(execute: {
+                            cell.avatar.image = image
+                        })
                         self.collectionView.collectionViewLayout.invalidateLayout()
                     }
                 }
             }
-        } else {
-            cell.avatar.image = UIImage(named: "placeholder")!
         }
         
         cell.onTappingImage = {
