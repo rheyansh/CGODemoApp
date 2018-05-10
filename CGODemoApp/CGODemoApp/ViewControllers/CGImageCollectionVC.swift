@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -86,10 +86,7 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
-    }
+    //MARK:- UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -106,9 +103,6 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
         self.collectionView.collectionViewLayout.invalidateLayout()
     }
     
-    
-    //MARK:- Segues
-
     //MARK:- Web api section
     
     private func loadDataFromServer() {
@@ -127,12 +121,5 @@ class CGImageCollectionVC: UIViewController, UICollectionViewDataSource, UIColle
                 }
             }
         }
-    }
-
-    //MARK:- Memory handling
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
