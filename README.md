@@ -15,6 +15,10 @@
 
 >> Pull to refresh and network reachability
 
+![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/0.png)
+![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/1.png)
+![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/3.png)
+
 # TECHNICAL SPECIFICATION
 
 1. Min deployment target:                     iOS 8.0
