@@ -17,7 +17,7 @@
 
 ![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/0.png)
 ![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/1.png)
-![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/3.png)
+![Alt text](https://github.com/rheyansh/CGODemoApp/blob/master/Screenshots/2.png)
 
 # TECHNICAL SPECIFICATION
 
